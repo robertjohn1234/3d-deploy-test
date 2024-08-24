@@ -4,7 +4,7 @@ import RenderModel from "@/components/RenderModel";
 // import HatModel from "@/components/models/HatModel";
 import AboutDetails from "@/components/about";
 import dynamic from "next/dynamic";
-const HatModel = dynamic(() => import("@/components/models/HatModel"), {
+const Hat = dynamic(() => import("@/components/models/Hat"), {
   ssr: false,
 });
 
@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <RenderModel>
-          <HatModel />
+          <Hat />
         </RenderModel>
       </div>
 
