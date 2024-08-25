@@ -19,7 +19,7 @@ const Shotgun = React.memo(function Shotgun(props) {
     <group {...props} 
     dispose={null}
     scale={[0.5, 0.5, 0.5]}
-    position={[0.0, 0.5, 0]}
+    position={[0.4, 0.5, 0]}
     ref={modelRef}
     >
       <mesh
@@ -41,4 +41,4 @@ const Shotgun = React.memo(function Shotgun(props) {
 })
 
 export default Shotgun;
-useGLTF.preload('/Shotgun-transformed.glb')
+useGLTF.preload('/models/shotgun-transformed.glb')

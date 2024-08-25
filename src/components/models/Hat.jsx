@@ -36,4 +36,4 @@ const Hat = React.memo(function Hat(props) {
 })
 
 export default Hat
-useGLTF.preload('/hat-transformed.glb')
+useGLTF.preload('/models/hat-transformed.glb')
